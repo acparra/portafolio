@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "name": "Conetso",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro in optio, quos dicta iure libero aspernatur maiores perferendis illo sit rerum incidunt non error deleniti commodi nemo laudantium labore.",
+            "image": "./assets/fondo.jpg",
+            "url": "https://conetso.github.io/",
+            "repository": "https://conetso.github.io/"
+        },
+        {
+            "name": "Conetso 2",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro in optio, quos dicta iure libero aspernatur maiores perferendis illo sit rerum incidunt non error deleniti commodi nemo laudantium labore.",
+            "image": "./assets/fondo.jpg",
+            "url": "https://conetso.github.io/",
+            "repository": "https://conetso.github.io/"
+        },
+        {
+            "name": "Conetso 3",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro in optio, quos dicta iure libero aspernatur maiores perferendis illo sit rerum incidunt non error deleniti commodi nemo laudantium labore.",
+            "image": "./assets/fondo.jpg",
+            "url": "https://conetso.github.io/",
+            "repository": "https://conetso.github.io/"
+        },
+        {
+            "name": "Conetso 4",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro in optio, quos dicta iure libero aspernatur maiores perferendis illo sit rerum incidunt non error deleniti commodi nemo laudantium labore.",
+            "image": "./assets/fondo.jpg",
+            "url": "https://conetso.github.io/",
+            "repository": "https://conetso.github.io/"
+        },
+        {
+            "name": "Conetso 5",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro in optio, quos dicta iure libero aspernatur maiores perferendis illo sit rerum incidunt non error deleniti commodi nemo laudantium labore.",
+            "image": "./assets/fondo.jpg",
+            "url": "https://conetso.github.io/",
+            "repository": "https://conetso.github.io/"
+        }
+    ]
+}
