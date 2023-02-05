@@ -1,7 +1,6 @@
 const navButton = document.getElementById("nav__toggler__btn")
 const navbar = document.getElementById("nav__navigation")
 const navItems = document.getElementsByClassName("nav__navigation__item")
-// const projectsSection = document.querySelector("#projects .section__content")
 
 const toggleNavbar = () => {
     let style = getComputedStyle(navbar)
@@ -18,7 +17,6 @@ navButton.addEventListener("click", toggleNavbar)
 for (const iterator of navItems) {
     iterator.addEventListener("click", () => toggleNavbar())
 }
-
 
 // Slider
 
@@ -60,27 +58,31 @@ const goToProject = () => {
 }
 
 
-// Bug de fixed
+// Fix fixed bug
 
 
 function windowResized() {
     const nav = document.querySelector(".nav__container");
     const wrapper = document.querySelector(".wrapper");
     const styles = getComputedStyle(wrapper)
+    const content = document.getElementsByClassName("content__container")[0]
     console.log(styles.position)
     if (styles.position == "fixed") {
         wrapper.style.width = `${nav.clientWidth}px`;
     } else {
         wrapper.style.width = ""
     }
-    // 4px = 2*2px child padding (right/left)
+    let hash = location.hash
+    location.hash = "#"
+    window.location.hash = hash
 }
 
 window.addEventListener("resize", windowResized);
 windowResized();
 
-let links = document.querySelectorAll(".nav__navigation__item a");
+// Fix scroll resize
 
+const links = document.querySelectorAll(".nav__navigation__item a");
 
 onpopstate = (event) => {
     let hash = window.location.hash
