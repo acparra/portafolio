@@ -6,6 +6,7 @@
     font-family: Sofia Sans;
     scroll-behavior: smooth;
     font-size: 20px;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
@@ -20,7 +21,6 @@ body {
     max-width: 100%;
     height: 100%;
 }
-
 
 /* Particles */
 
@@ -51,6 +51,8 @@ body {
     /* border: 1px solid green; */
     overflow: hidden;
     z-index: 2;
+    animation-name: generalAnim;
+    animation-duration: 2s;
 }
 
 .content__container {
@@ -362,12 +364,6 @@ body {
     margin-top: 15px;
 }
 
-.project__right__buttons a {
-    background: none;
-    border: 1px solid var(--second-color-text);
-    font-size: 16px;
-}
-
 .project__right__web {
     margin-right: 15px;
 }
@@ -416,7 +412,6 @@ body {
     padding: 15px;
     display: inline-block;
     width: fit-content;
-    background: var(--second-color-text);
     color: var(--first-color-text);
     border-radius: 7.5px;
 }
@@ -430,6 +425,27 @@ body {
 a.selected {
     transition: color .3s linear;
     color: var(--second-color-text);
+}
+
+.button--outline{
+    background: none;
+    border: 1px solid var(--second-color-text);
+    font-size: 16px;
+    transition: background .15s linear;
+}
+
+.button--outline:hover {
+    background: var(--second-color-text);
+}
+
+.button--filled {
+    background-color: var(--second-color-text);
+    transition: background .15s linear;
+}
+
+.button--filled:hover {
+    background:none;
+    outline: 1px solid var(--second-color-text)
 }
 
 /* Media queries */
@@ -618,6 +634,17 @@ a.selected {
 
     .button {
         font-size: 16px;
+    }
+}
+
+/* General anim */
+
+@keyframes generalAnim {
+    0%{
+        opacity: 0
+    }
+    100% {
+        opacity: 1
     }
 }
 
